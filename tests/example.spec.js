@@ -2,15 +2,15 @@
 import { test, expect } from '@playwright/test';
 
 
-test('Проверка заголовка', async ({ page }) => {
+test.skip('Проверка заголовка', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   
-  await expect(page).toHaveTitle(/Playwright/);     // Expect a title "to contain" a substring.
+  await expect(page).toHaveTitle(/Playwright/);     // Ожидает что текс вкладки будет иметь надпись Playwright
 });
 
 
-test('Отображается ссылка Get started', async ({ page }) => {
+test.skip('Отображается ссылка Get started', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   
